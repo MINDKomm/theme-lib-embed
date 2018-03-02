@@ -39,6 +39,11 @@ class Youtube {
 			return $result;
 
 		} elseif ( 'playlist' === $video['type'] ) {
+			/**
+			 * Use custom playlist markup.
+			 *
+			 * @see https://developers.google.com/youtube/youtube_player_demo
+			 */
 			return '<iframe width="' . $data->width . '" height="' . $data->height . '" type="text/html" src="https://www.youtube.com/embed/?listType=playlist&list=' . $video['id'] . '&modestbranding=1&playsinline=1&color=white" frameborder="0" allowfullscreen></iframe>';
 		}
 
