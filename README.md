@@ -37,6 +37,8 @@ $embeds = new Theme\Embed\Embed( 800, 0.5 );
 $embeds->init();
 ```
 
+If you already have an `embed_oembed_html` filter in place that adds divs with classes `responsive-embed` and `keep-aspect-ratio`, you could probably remove it, because this library already adds one, too.
+
 ## Support
 
 This is a package that we use at MIND to develop WordPress themes. You’re free to use it, but currently, we don’t provide any support.
